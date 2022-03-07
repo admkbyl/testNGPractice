@@ -1,0 +1,23 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+
+    <test name="Regression">
+
+        <parameter name="URL" value="carloan.com"/>
+        <parameter name="APIKey/usrname" value="123456"/>
+        <groups>
+            <run>
+                <exclude name ="Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="test.day1"/>
+            <class name="test.day2"/>
+            <class name ="test.day4"/>
+            <class name="test.day3"/>
+
+        </classes>
+    </test>
+
+</suite>
